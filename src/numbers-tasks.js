@@ -302,10 +302,13 @@ getSumToN();
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  return `${num}`
+    .split('')
+    .map(Number)
+    .reduce((sum, current) => sum + current);
 }
-
+getSumOfDigits();
 /**
  * Returns true if the given number is a power of two, false otherwise.
  *
