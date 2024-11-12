@@ -240,10 +240,10 @@ toNumber();
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(num) {
+  return num ** 3;
 }
-
+getCube();
 /**
  * Returns the Fibonacci number located at the index position.
  *
