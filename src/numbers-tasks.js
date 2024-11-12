@@ -282,9 +282,14 @@ getFibonacciNumber();
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  let sum = 0;
+  for (let count = 1; count <= n; count += 1) {
+    sum += count;
+  }
+  return sum;
 }
+getSumToN();
 
 /**
  * Returns the sum of the digits of a given number.
