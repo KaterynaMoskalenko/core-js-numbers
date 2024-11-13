@@ -365,9 +365,10 @@ numberToStringInBase();
  * @example:
  * 12345, 2    => '1.23e+4'
  */
-function toExponential(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toExponential(number, fractionDigits) {
+  return Number(number).toExponential(fractionDigits);
 }
+toExponential();
 
 /**
  * Returns a string representation of a number in fixed-point notation.
